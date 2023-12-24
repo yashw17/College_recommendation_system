@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recommended Colleges</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mainpage {
+        background-color: rgba(255, 255, 255, 0.89);
+        width: 1500px;
+        height:fit-content;
+        background-color: rgba(228, 219, 219, 0.797);
+        padding-top:20px ;
+    }
+
+    .loading {
+
+        font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+        text-transform: uppercase;
+
+        width: 150px;
+        text-align: center;
+        line-height: 50px;
+
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 50%;
+        margin: 50px;
+        transform: translateY(-50%);
+
+    }
+
+    .loading span {
+        position: relative;
+        z-index: 999;
+        color: #fff;
+    }
+
+    .loading:before {
+        content: '';
+        background: #61bdb6;
+        width: 128px;
+        height: 36px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+        animation: 2s loadingBefore infinite ease-in-out;
+    }
+
+    @keyframes loadingBefore {
+        0% {
+            transform: translateX(-14px);
+        }
+
+        50% {
+            transform: translateX(14px);
+        }
+
+        100% {
+            transform: translateX(-14px);
+        }
+    }
+
+
+    .loading:after {
+        content: '';
+        background: #ff3600;
+        width: 14px;
+        height: 60px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: .5;
+
+        animation: 2s loadingAfter infinite ease-in-out;
+    }
+
+    @keyframes loadingAfter {
+        0% {
+            transform: translateX(-50px);
+        }
+
+        50% {
+            transform: translateX(50px);
+        }
+
+        100% {
+            transform: translateX(-50px);
+        }
+    }
+
+    .alignloading {
+        padding-left: 41%;
+
+    }
+
+    .bepatient {
+        text-align: center;
+
+    }
+
+    .display {
+        width: auto;
+        height: 520px;
+        border-style: dashed;
+        border-color: black;
+        margin-top: 10px;
+        background-color: rgba(43, 78, 102, 0.892);
+
+    }
+
+    .recommend {
+        font-size: 25px;
+        margin-left: 570px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .framedisplay {
+        width: 900px;
+        height: 400px;
+        margin-left: 320px;
+        border: solid black;
+        border-radius: 20px;
+
+    }
+
+    .footer {
+        background-color: rgba(30, 3, 86, 0.867);
+        color: white;
+        padding-left: 630px;
+        margin-top: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+    }
+</style>
+
+<body>
+    <div class="mainpage">
+        <div class="alignloading">
+            <div class="loading">
+                <span>Loading</span>
+
+            </div>
+            <h3>Please be patient till loading....</h3>
+        </div>
+        <div class="bepatient">
+
+        </div>
+
+        <div class="display">
+            <div class="recommend">Your Recommended College Here!!!!</div>
+
+            <iframe
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSs-XDKKCBoyRjg7F8Q867p3BBp4w9NwyUGhOeXrYbVwz3WzL7pzS0-qPy4JWWKLcVxcNMxMAw4KSPW/pubhtml?gid=1688609436&amp;single=true&amp;widget=true&amp;headers=false"
+                class="framedisplay">
+            </iframe>
+        </div>
+        <div class="footer">
+
+            Created by Yash Walunjkar & Team. © 2022
+
+        </div>
+    </div>
+</body>
+
+</html>

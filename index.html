@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>
+        COLLEGE RECOMMENDATON SYSTEM
+    </title>
+    <link rel="icon" href="UNIVERSITY ICON.png" type="image">
+    <link rel="stylesheet" href="media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA.Compatible" content="IE=edge">
+</head>
+<style>
+    .mainpage {
+        background-color: rgba(255, 255, 255, 0.89);
+        width: 1000px;
+
+    }
+
+    .nav {
+        width: 100vw;
+        height: 35px;
+        background-color: rgb(195, 195, 32);
+        margin-bottom: 10px;
+        border-style: solid;
+        border-color: rgb(54, 88, 89);
+        border-radius: 10px;
+        display: flexbox;
+    }
+
+
+
+    .help {
+        margin-top: 5px;
+        border-radius: 10px;
+
+        background-color: rgba(10, 39, 75, 0.94);
+        cursor: pointer;
+        float: left;
+        font-size: 15px;
+        margin-left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-decoration: none;
+    }
+
+    .contact {
+        margin-top: 5px;
+        border-radius: 10px;
+        background-color: rgba(10, 39, 75, 0.94);
+        object-position: 50px;
+        cursor: pointer;
+        margin-left: 40vw;
+
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .suggestion {
+        margin-top: 5px;
+        border-radius: 10px;
+        background-color: rgba(10, 39, 75, 0.94);
+        cursor: pointer;
+        float: right;
+        font-size: 15px;
+        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+
+    }
+
+    .underline {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .underline1 {
+        text-decoration: none;
+
+
+    }
+
+    .underline1:hover {
+        background-color: rgb(13, 40, 88);
+        color: rgb(249, 245, 245);
+    }
+
+    .help:hover {
+        background-color: rgba(187, 13, 164, 0.64);
+    }
+
+    .contact:hover {
+        background-color: rgba(187, 13, 164, 0.64);
+    }
+
+    .suggestion:hover {
+        background-color: rgba(187, 13, 164, 0.64);
+    }
+
+    .university {
+        margin-top: 5px;
+        background-color: rgba(98, 121, 134, 0.226);
+        padding-top: 10px;
+        padding-left: 40%;
+        border-radius: 15px;
+        padding-bottom: 5px;
+        width: 1100px;
+    }
+
+    .choose {
+        font-weight: bold;
+        margin-top: 8px;
+        text-align: center;
+        font-size: 25px;
+        font-style: normal;
+        background-color: rgb(157, 53, 121);
+        background-blend-mode: color-burn;
+        height: 40px;
+        padding-top: 10px;
+        border: solid;
+        border-color: rgb(100, 174, 176);
+        color: rgb(255, 255, 255);
+        border-radius: 15px;
+        width: 1500px;
+
+    }
+
+    .welcome {
+        font-size: 40px;
+        background-color: rgba(17, 17, 111, 0.548);
+        border-style: solid;
+        border-color: rgb(157, 99, 99);
+        height: fit-content;
+        text-transform: uppercase;
+        text-decoration-style: solid;
+        text-decoration: dashed;
+        flex-shrink: inherit;
+        color: white;
+        text-shadow: 5px 4px 5px #000000;
+        margin-top: 10PX;
+        width: 98vw;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .main form {
+        background-color: rgba(138, 182, 138, 0.684);
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        border-color: rgb(50, 47, 141);
+        border-style: double;
+        border-width: 2px;
+        padding-top: 40px;
+        width: 1500px;
+
+    }
+
+    .formfont {
+        color: rgb(8, 5, 56);
+        font-weight: bold;
+        text-shadow: 2px 3px 3px #5e699da8;
+
+
+    }
+
+    .year {
+        float: right;
+        cursor: pointer;
+        width: 200px;
+
+
+    }
+
+    .percentile {
+        float: right;
+        cursor: pointer;
+        width: 190px;
+    }
+
+    .branch {
+        float: right;
+        cursor: pointer;
+        width: 200px;
+        overflow: visible;
+
+    }
+
+    .caste {
+        float: right;
+        cursor: pointer;
+        width: 200px;
+
+    }
+
+    .university1 {
+        float: right;
+        cursor: pointer;
+        width: 200px;
+
+    }
+
+    .reset {
+
+        cursor: pointer;
+    }
+
+    .find {
+        text-decoration: none;
+        margin-left: 50%;
+        margin-top: 20px;
+        border-radius: 20px;
+        font-size: 18px;
+        cursor: pointer;
+        padding-left: 24px;
+        padding-right: 20px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-weight: bold;
+        background-color: rgb(248, 252, 252);
+        color: rgb(10, 10, 11);
+
+    }
+
+    .find:hover {
+        background-color: rgb(13, 40, 88);
+        color: rgb(249, 245, 245);
+    }
+
+    .submit {
+        margin-left: 900px;
+
+    }
+
+    .ads {
+        background-color: rgba(221, 231, 153, 0.51);
+        border: 2px;
+        border-style: solid;
+        border-color: black;
+        font-size: 17px;
+        margin-top: 5px;
+        color: rgb(248, 51, 51);
+        font-weight: bold;
+        font-style: italic;
+        padding-left: 50%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-radius: 10px;
+        width: 1000px;
+
+    }
+
+    .clglist {
+        border-style: solid;
+        border-color: rgb(10, 9, 9);
+        border-radius: 10px;
+        padding: 10px 10px 10px 10px;
+        margin-top: 5px;
+        width: 1480px;
+        height: 300px;
+        background-color: rgba(202, 204, 194, 0.244);
+    }
+
+    .clgimg {
+        padding-right: 15px;
+        border: 3px;
+        border-style: solid;
+        border-color: #000000c2;
+
+    }
+
+    .clgname {
+        padding-right: 130px;
+        padding-left: 150px;
+        font-weight: bold;
+        color: rgb(3, 6, 6);
+
+    }
+
+    .clgname1 {
+        padding-right: 120px;
+        padding-left: 90px;
+        font-weight: bold;
+        color: rgb(3, 6, 6);
+
+    }
+
+    .display {
+        width: auto;
+        height: fit-content;
+        border-style: dashed;
+        border-color: black;
+        margin-top: 10px;
+        background-color: rgba(43, 78, 102, 0.892);
+
+    }
+
+    .recommend {
+        font-size: 25px;
+        margin-left: 570px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: white;
+
+    }
+
+    .framedisplay {
+
+        height: 400px;
+        margin-left: 320px;
+        border: solid black;
+        border-radius: 20px;
+        width: auto;
+
+    }
+
+    .footer {
+        background-color: rgba(30, 3, 86, 0.867);
+        color: white;
+        padding-left: 560px;
+        margin-top: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        width: 943px;
+        margin-bottom: 5px;
+
+    }
+</style>
+
+<body>
+
+    <div class="mainpage">
+        <div class="nav">
+            <button class="help"><a class="underline" href="webhelp.html">Website Help</a></button>
+            <button class="contact"><a class="underline" href="mailto:collegerecommendationsystem@gmail.com">Contact
+                    Us</button></a>
+            <button class="suggestion"><a class="underline" href="https://forms.gle/i3qrKPPWv9Kd5Xvu7">Suggestion
+                    Box</a></button>
+        </div>
+        <div class="welcome">
+            <marquee scrolldelay="100sec">*** WELCOME TO OUR COLLEGE RECOMMENDATION WEBSITE ***</marquee>
+        </div>
+        <div class="university">
+            <img src="university-of-oxford.jpg" width="700px" height="450px">
+        </div>
+        <div class="choose">
+            Choose Your Dream College In Just One Click!!!
+        </div>
+
+        <div class="ads">
+
+            <marquee direction="up" scrolldelay="350sec" height="160px"><img src="news.gif" height="25" width="30"> **
+                We
+                Are Adding More Colleges And Universities!!!!!
+                <img src="news.gif" height="25" width="30">
+                <br>
+                <img src="news.gif" height="25" width="30"> ** We Are Adding More State Level And National Level Exams
+                **
+                <img src="news.gif" height="25" width="30">
+                <br>
+                <img src="news.gif" height="25" width="30"> ** We Are Including More Branches of Engineering **
+                <img src="news.gif" height="25" width="30">
+                <br>
+                <img src="news.gif" height="25" width="30"> ** We Are Including More Streams Other Than Engineering**
+                <img src="news.gif" height="25" width="30">
+            </marquee>
+
+        </div>
+        <div class="clglist">
+            <div>
+                <marquee direction="left"><img src="coep.jpg" height="250px" width="350px" class="clgimg">
+                    <img src="pccoe.webp" height="250px" width="350px" class="clgimg">
+                    <img src="pict.webp" height="250px" width="350px" class="clgimg">
+                    <img src="mit.webp" height="250px" width="350px" class="clgimg">
+                    <img src="iiit.webp" height="250px" width="350px" class="clgimg">
+                    <img src="vit.webp" height="250px" width="350px" class="clgimg">
+                    <img src="aissms.webp" height="250px" width="350px" class="clgimg">
+                    <img src="dypatil.webp" height="250px" width="350px" class="clgimg">
+                    <img src="mksss.webp" height="250px" width="350px" class="clgimg">
+                    <img src="kj college.jpeg" height="250px" width="350px" class="clgimg">
+                    <img src="indira.webp" height="250px" width="350px" class="clgimg">
+
+                </marquee>
+            </div>
+            <marquee>
+                <span class="clgname"><u>COEP PUNE</u></span>
+                <span class="clgname"><u>PCCOE PIMPRI</u></span>
+                <span class="clgname"><u>PICT PUNE</u></span>
+                <span class="clgname"><u>MIT PUNE</u></span>
+                <span class="clgname"><u>IIIT PUNE</u> </span>
+                <span class="clgname"><u>VIT PUNE</u></span>
+                <span class="clgname"><u>AISSMS PUNE</u></span>
+                <span class="clgname"><u>DYP PUNE</u></span>
+                <span class="clgname"><u>MKSSS PUNE</u></span>
+                <span class="clgname"><u>KJ COLLEGE PUNE</u></span>
+                <span class="clgname"><u>INDIRA COLLEGE PUNE</u></span>
+            </marquee>
+        </div>
+
+        <div class="main form">
+            <form method="post" autocomplete="on" name="google-sheet">
+                <table cellpadding="15" width="80%" cellspacing="8">
+                    <tr>
+                        <td class="formfont">Enter Academic Year Of Appearing Mhtcet:-
+                            <select name="year" class="year">
+                                <option value="." selected>Choose Year</option>
+                                <option value="2020"> 2020 </option>
+                                <option value="2021"> 2021 </option>
+                                <option value="2022"> 2022 </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formfont">Enter Your MHT-CET Percentile(%):-
+                            <input type="text" class="percentile" name="percentile">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formfont">Choose Your Preferred Branch:-
+                            <select name="branch" class="branch">
+                                <option value="." selected>Choose Branch</option>
+                                <option value="COMPUTER"> Computer Science Engineering </option>
+                                <option value="IT"> information Technology Engineering</option>
+                                <option value="ELECTRONICS AND TELECOMMUNICATION"> Electronics And Telecommunication
+                                    Engineering </option>
+                                <option value="ELECTRICAL"> Electrical Engineering </option>
+                                <option value="CIVIL"> Civil Engineering </option>
+                                <option value="MECHANICAL"> Mechanical Engineering </option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formfont">Select Your Caste:-
+                            <select name="caste" class="caste">
+                                <option value="." selected>Select Category</option>
+                                <option value="Open"> OPEN </option>
+                                <option value="Obc"> OBC </option>
+                                <option value="Sc">SC </option>
+                                <option value="St"> ST</option>
+                                <option value="Nt"> NT</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formfont">Choose Your Preferred university:-
+                            <select name="university" class="university1">
+                                <option value="." selected>Select University</option>
+                                <option value="Pune University(SPPU)">Pune University (SPPU)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="reset" class="reset">
+                            <input type="submit" class="submit" value="Submit Data">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="find" onclick="myFunction()" />Find Colleges For Me!!</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+
+        </div>
+        <div class="clglist">
+            <div>
+                <marquee direction="right">
+
+                    <img src="jspm.webp" height="250px" width="350px" class="clgimg">
+                    <img src="viit.webp" height="250px" width="350px" class="clgimg">
+                    <img src="modern.webp" height="250px" width="350px" class="clgimg">
+                    <img src="progressive.webp" height="250px" width="350px" class="clgimg">
+                    <img src="pvg.webp" height="250px" width="350px" class="clgimg">
+                    <img src="sinhgad.webp" height="250px" width="350px" class="clgimg">
+                    <img src="bharti.webp" height="250px" width="350px" class="clgimg">
+                    <img src="kj college.jpeg" height="250px" width="350px" class="clgimg">
+                    <img src="dholepatil.webp" height="250px" width="350px" class="clgimg">
+                    <img src="tae.jpeg" height="250px" width="350px" class="clgimg">
+
+
+                </marquee>
+            </div>
+            <marquee direction="right">
+
+                <span class="clgname1"><u>JSPM NARHE</u></span>
+                <span class="clgname1"><u>VIIT PUNE</u></span>
+                <span class="clgname1"><u>MODERN COE PUNE</u></span>
+                <span class="clgname1"><u>PES COE PUNE</u> </span>
+                <span class="clgname1"><u>PVG COET PUNE</u></span>
+                <span class="clgname1"><u>SINHAGAD PUNE</u></span>
+                <span class="clgname1"><u>BHARATI PUNE</u></span>
+                <span class="clgname1"><u>KJ COLLEGE PUNE</u></span>
+                <span class="clgname1"><u>DHOLEPATIL COLLEGE PUNE</u></span>
+                <span class="clgname1"><u>TRINITY ACADEMY PUNE</u></span>
+
+            </marquee>
+        </div>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyTHlQj4zEbjCXW6xMdiitPAgG6D7UfttbOVhzkBGEN5lTOIKGVI2ZFZM8zIPPvyfWBBg/exec'
+            const form = document.forms['google-sheet']
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => alert("Thanks for entering your information.we are working on your provided data for recommend colleges"))
+                    .catch(error => console.error('Error!', error.message))
+
+            })
+        </script>
+        <script>
+            function myFunction() {
+                window.location.href = "display.html";
+            }
+        </script>
+
+
+
+        <div class="footer">
+
+            Created by Yash Walunjkar & Team. © 2022
+
+        </div>
+    </div>
+</body>
+
+</html>

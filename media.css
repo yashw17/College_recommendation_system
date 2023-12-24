@@ -1,0 +1,42 @@
+@media screen and (max-width:800px){
+   .nav{
+    display:flexbox;
+    width: auto;
+   }
+   .welcome{
+    width:auto;
+   }
+
+}
+@media screen and (max-width:400px){
+    .nav{
+     display:flexbox;
+     width: auto;
+    }
+    .contact{
+        margin-left: 40%;
+    }
+    .suggestion{
+        margin-left: 40%;
+    }
+    .welcome{
+     width:auto;
+    }
+ 
+ }
+ @media screen and (max-width:200px){
+    .nav{
+     display:flexbox;
+     width: auto;
+    }
+    .contact{
+        margin-left: 40vw;
+    }
+    .welcome{
+     width:auto;
+    }
+    .suggestion{
+        margin-left: 40vw;
+    }
+ 
+ }
